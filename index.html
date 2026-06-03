@@ -535,6 +535,17 @@
       .heroText{padding:18px}
       .heroActions{grid-template-columns:1fr}
       .photoCard{min-height:390px}
+
+      /* Mobile terrain : on laisse voir les panneaux.
+         Le texte d'ambiance reste utile sur grand écran,
+         mais sur téléphone il masque trop la photo. */
+      .photoShade{
+        background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.18));
+      }
+      .photoBadge{
+        display:none;
+      }
+
       .sectionTitle{font-size:25px}
     }
   </style>
@@ -785,3 +796,4 @@
 </script>
 </body>
 </html>
+
